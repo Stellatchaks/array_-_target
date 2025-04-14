@@ -1,14 +1,11 @@
 def base(inputbase,number,outputbase):
-    if inputbase==2 and outputbase==10:
-        int(number,10)
-    
+    if inputbase==10:
+        
+     if outputbase == 2:
+        return bin(number)[2:]  
+     elif outputbase == 8:
+        return oct(number)[2:]  
+     elif outputbase == 16:
+        return hex(number)[2:]
 
-
-
-
-
-
-a=input("enter a number")
-b=input("enter the number base")
-c=input("enter the output base")
-
+print(base(10,36,2))
